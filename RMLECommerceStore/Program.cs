@@ -27,6 +27,10 @@ namespace RMLECommerceStore
             SeedData.EnsurePopulated(app);
 
             app.UseStaticFiles();
+
+            app.MapControllerRoute("pagination",
+                "Products/{pageNumber}",
+                new {Controller = "Home", action = "Index"});
             app.MapDefaultControllerRoute();
 
             app.Run();
