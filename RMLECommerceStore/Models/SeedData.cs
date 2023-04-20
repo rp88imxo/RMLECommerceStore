@@ -12,6 +12,7 @@ namespace RMLECommerceStore.Models
                 .ServiceProvider
                 .GetRequiredService<StoreDbContext>();
 
+           var migrations = context.Database.GetAppliedMigrations();
             if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();

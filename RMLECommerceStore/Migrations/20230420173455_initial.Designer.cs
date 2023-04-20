@@ -12,7 +12,7 @@ using RMLECommerceStore.Database;
 namespace RMLECommerceStore.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
-    [Migration("20230417162813_initial")]
+    [Migration("20230420173455_initial")]
     partial class initial
     {
         /// <inheritdoc />

@@ -10,7 +10,7 @@ namespace RMLECommerceStore.Database
         public StoreDbContext(DbContextOptions<StoreDbContext> dbContextOptions)
             : base(dbContextOptions)
         {
-
+           
         }
     }
 }
