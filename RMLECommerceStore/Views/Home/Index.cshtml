@@ -1,0 +1,12 @@
+﻿@using RMLECommerceStore.Models;
+@model IQueryable<Product>
+
+@foreach (var product in Model ?? Enumerable.Empty<Product>())
+{
+    <div>
+        <h3>@product.Name</h3>
+        @product.Description
+        <h4>@product.Price.ToString("C0")</h4>
+    </div>
+}     
+    
